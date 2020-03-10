@@ -1,0 +1,58 @@
+/* CSS de artigos */
+
+.center {
+    text-align: center;
+}
+
+.artigos,#artSubtitulo {
+    text-align: center;
+    padding: 0 1rem;
+    color:#5BC0EB;
+}
+
+.artigos .login,
+#artRodape a {
+    display: table;
+    margin: auto;
+    padding: .5rem 1rem;
+    color: white;
+    background: linear-gradient(rgb(95, 174, 240), rgb(34, 65, 90));
+    border-radius: .3rem;
+}
+
+.artigos .login:hover,
+#artRodape a:hover {
+    background: linear-gradient(rgb(253, 114, 63), rgb(128, 34, 0));
+}
+
+#artRodape {
+    margin-top: 2rem;
+}
+
+.listagem {
+    display: block;
+    background: #ffffcc;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.listagem:nth-child(odd) {
+    background: #ccffcc;
+}
+
+.listagem img {
+    width: 100%;
+    max-width: auto;
+}
+
+#artSubtitulo {
+    display: block;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+#artConteudo img {
+    max-width: 100%;
+}

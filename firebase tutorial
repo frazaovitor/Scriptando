@@ -1,0 +1,170 @@
+firebase
+
+ir para o console
+adicionar projeto
+
+- google analytics-
+nao  usar pq monitora e eé muito pesado. somente ativar quando estiver na web
+
+criar projeto
+
+ligar o site ao firebase
+	setings
+		config do projeto
+			atualizar email
+			nome exibido ao publico
+			clicar na WEB
+			não usar o firebasehosting
+			registrar app
+				copiar o codigo gerado inteiro
+				voltar pro console
+ir em template.html
+	colar o código após a JQuary
+	criar um arquivo na pasta js com o nome jsconfig.js
+	recortar a parte do código 
+	
+	
+	" 
+
+	// Seu web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSRIs0frr5e4EQiPR0rUBdFuVPq1gQmgg",
+    authDomain: "scriptando-f6bc3.firebaseapp.com",
+    databaseURL: "https://scriptando-f6bc3.firebaseio.com",
+    projectId: "scriptando-f6bc3",
+    storageBucket: "scriptando-f6bc3.appspot.com",
+    messagingSenderId: "326386413072",
+    appId: "1:326386413072:web:2d292d3579cc3f8c226495"
+  };
+  // inicializa o Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  "
+  
+  
+  
+  e colar no jsconfig.js
+  
+referenciar  o jsconfig.js  no template html "<script src="js/fbconfig.js"></script>"
+  
+voltar ao firebase 
+ir em autentication
+	config metodo de login
+		usar o google
+		ativar e salvar
+		conferir se em domínios autorizados é localhost
+		se for upando na internet, colocar os dominios nessa parte
+			ir para documentação
+			primeiros passos para web
+			etapa 5
+				bibliotecas disponiveis
+					usar apartir do CDN
+					copiar autentication
+					colar no template.html após o carregamento do api core 
+					colocar a mesma verção no código
+					voltar e clicar em autentication
+					pegar um "observador" que vê se tem alguém tentando logar no site
+					copiar o código
+					voltar a pasta JS e criar um novo documento com o nome fbauth.js
+						colar o código logo após onde o conecta o firebase
+						voltar ao firebase
+						usar em logion do google
+						Processar o fluxo de login com o SDK do Firebase
+						copiar 1: Crie uma instância do objeto provedor do Google
+							colar no fbauth.js
+						voltar ao firebase
+						colar 3: Opcional: para localizar o fluxo OAuth do provedor para a linguagem preferida do usuário sem passar explicitamente os parâmetros de OAuth personalizados relevantes, atualize o código do idioma na instância de Auth antes de iniciar o fluxo de OAuth. Por exemplo:
+							firebase.auth().useDeviceLanguage(); -> usa o idioma do próprio navegador
+							
+						5: Use o objeto provedor do Google para a autenticação no Firebase
+							usar o pop-up
+							copiar o código
+							ir em fbauth.js
+							criar uma function login()
+							e colar o código dentro
+							voltar ao firebase 
+							ir para o final da página e pegar  o código para desconectar
+							ir para o fbauth.js
+							criar uma function logout()
+							colar o código
+							
+CONSTRUÇÃO DO FBAUTH.JS
+
+criar uma variável GLOBAL
+
+ver código no FBAUTH.JS
+
+
+
+
+-----Utilizar dados somente quando o cliente estiver logado-----
+
+	firebase
+	entrar em database
+	criar banco de dados
+	iniciar coleção 
+	nome da coleção
+	salvar
+	
+	depois de feito
+	construir artigo.html
+	
+	
+	
+	Firestore
+	
+	https://firebase.google.com/docs/firestore/quickstart
+	
+	primeiros passos
+	
+	fbconfig
+	// inicializa o Firestore
+  var db = firebase.firestore();
+  
+  
+  template
+ 
+    <!-- carrega a API do firestore-->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+
+artigos.js -atualizando-
+
+regras do database
+
+
+  
+  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+  
+  
+  
+  
+  
+	

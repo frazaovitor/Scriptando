@@ -1,0 +1,210 @@
+/* CSS do tema */
+
+:root {
+    --wrap-max-width: 960px;
+}
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.logo{
+    margin: -0.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 1rem 0;
+}
+
+a {
+    color: #2DD6BA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2DD6BA;
+}
+
+/* Fundo do App */
+
+body {
+    background-color: slategray;
+    background-image: url('../img/fundo01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Wrap */
+
+.wrap {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    max-width: var(--wrap-max-width);
+    position: relative;
+    width: 100%;
+}
+/* Cabeçalho (header) */
+.header {
+    align-items: center;
+    background: #136F63;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    margin: auto;
+    max-width: var(--wrap-max-width);
+    position: fixed;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 99;
+}
+
+.header a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: .8rem;
+}
+
+.header a:hover {
+    background: #5BC0EB;
+}
+
+/*.header h1 {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+    margin: 0;
+}*/
+
+.header * {
+    transition: .3s;
+}
+
+/* Menu principal */
+
+.nav {
+    background: #1F2041;
+    display: none;
+    position: fixed;
+    top: 3rem;
+    width: 100%;
+    max-width: 960px;
+    height: 70%;
+    z-index: 100;
+}
+
+.nav a {
+    color: white;
+    display: block;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background: #007FFF;
+}
+
+.nav hr {
+    border: 0;
+    border-top: 1px groove rgb(212, 212, 212);
+    margin: 0;
+}
+#usermenu{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+#usermenu img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+#usermenu>*:last-child{
+    margin-left: auto;
+}
+/* Fundo do menu 
+
+.modalbg {
+    background: rgba(0, 0, 0, .6);
+    display: none;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 2rem;
+    width: 100%;
+    z-index: 60;
+}
+*/
+
+#perfil{
+    display: none;
+}
+
+
+/* Conteúdo central (main) */
+
+.main {
+    background-color: rgba(45, 214, 186, 0.329);
+    flex-grow: 1;
+    margin: 3rem 0 1rem 0;
+    overflow: auto;
+}
+/* Rodapé (footer) */
+
+.footer {
+    background: #1F2041;
+    bottom: 0;
+    color: #136F63;
+    font-size: .8rem;
+    left: 50%;
+    max-width: var(--wrap-max-width);
+    padding: .5rem;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.footer a {
+    color: #136F63;
+}
+
+.footer a:hover {
+    color: rgb(255, 174, 174);
+}
+
+
+/* Slide do menu */
+
+.anim {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.animOpen {
+    max-height: 100vh;
+}
+.center{
+    text-align: center;
+}

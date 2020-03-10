@@ -1,0 +1,34 @@
+/* CSS de home */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    width: 90%;
+    text-align: center;
+    max-width: 400px;
+}
+
+.quadro {
+    display: block;
+    margin: 1rem;
+    border-radius: .3rem;
+    padding: .5rem;
+    box-shadow: 0px 0px 10px  #2DD6BA;
+    color: #1F2041;
+}
+
+.quadro div {
+    margin-top: .3rem;
+}
+/* Quadros */
+.q1,.q2,.q3,.q4{
+    background: #136F63;
+}
+
+.q1 i, .q2 i,.q3 i,.q4 i{
+    color: #1F2041;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favcon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Scriptando</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header class="header" id="header">
+            <a href="#Home"> <img id="logo" class="logo" src="img/logo.png" alt="logo scriptando"></a>
+            <span class="teste"></span>
+            <a href="#menu" id="btnMenu" data-nome="Luferat"><i class="fas fa-fw fa-bars"></i></a>
+
+        </header>
+
+        <nav class="nav" id="nav">
+            <span id="usermenu">
+                <i class="fas fa-fw fa-spinner fa-spin"></i>
+                <span>&nbsp;Aguarde...</span>
+                <a href="#user"><i class="fas fa-fw fa-sign-in-alt"></i></a>
+            </span>
+
+            <hr>
+            <a href="#artigos"><i class="fas fa-fw fa-pen-nib"></i> Artigos</a>
+            <a href="#noticias"><i class="far fa-fw fa-newspaper"></i> Notícias</a>
+            
+            <a href="#contatos"><i class="fas fa-fw fa-mail-bulk"></i> Contatos</a>
+            <a href="#sobre"><i class="fas fa-fw fa-info-circle"></i> Sobre</a>
+            
+            <a href="#perfil" id="perfil"><i class="fas fa-fw fa-user-cog"></i>Meu Perfil</a>
+            <a href="#config"><i class="fas fa-fw fa-cogs"></i> Configurações</a>
+
+        </nav>
+
+        <!-- Conteúdo da página será carregado aqui pelo JavaScript -->
+        <main class="main" id="main"></main>
+
+        <footer class="footer" id="footer">
+
+            &copy; 2020 <a href="#">Vitor Frazão</a>
+
+        </footer>
+
+    </div>
+
+    <div class="modalbg" id="modalMenu"></div>
+
+    <!-- Carrega o framework jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Carrega a API-core do firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+    <!-- carrega a API autentication do firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+
+    <!-- carrega a API do firestore-->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+
+    <!--configura e conecta o firebase-->
+    <script src="js/fbconfig.js"></script>
+
+    <!--Firebase autenticação-->
+    <script src="js/fbauth.js"></script>
+
+    <!-- Processa o menu principal e outras coisas -->
+    <script src="js/global.jquery.js"></script>
+
+    <!-- Processa as rotas internas e links externos -->
+    <script src="js/routing.jquery.js"></script>
+</body>
+
+</html>

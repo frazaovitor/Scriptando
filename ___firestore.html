@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Este script popula a coleção "artigos" do Firestore de forma automática -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+    <script>
+        // Configuração do Firebase (Use suas configurações aqui)
+        var firebaseConfig = {
+            apiKey: "AIzaSyDSRIs0frr5e4EQiPR0rUBdFuVPq1gQmgg",
+            authDomain: "scriptando-f6bc3.firebaseapp.com",
+            databaseURL: "https://scriptando-f6bc3.firebaseio.com",
+            projectId: "scriptando-f6bc3",
+            storageBucket: "scriptando-f6bc3.appspot.com",
+            messagingSenderId: "326386413072",
+            appId: "1:326386413072:web:2d292d3579cc3f8c226495"
+        };
+
+        // Initializa Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Inicializa Firestore
+        var db = firebase.firestore();
+
+        // REMOVER
+
+        var htmlTexto = `<p>Vestibulum sit amet tempus nibh. Duis sit amet interdum ligula, id bibendum tellus. Cras in maximus tellus, quis convallis leo.</p><p>Proin porttitor efficitur urna at iaculis. Nulla ante lorem, convallis finibus neque eget, dapibus tincidunt justo. </p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"><p>Nulla molestie quam eu arcu tincidunt, sed cursus ipsum commodo.</p><a href="http://luferat.net">Site do Fessô</a><p>Aliquam lacinia, mauris quis viverra pretium, arcu felis semper risus, id mollis elit nunc et eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>`;
+
+        db.collection("artigos").add({
+
+            autor: "Joca da Silva",
+            data: "2020-03-01 10:12",
+            imagem: "https://picsum.photos/198",
+            resumo: "Este é o primeiro artigo do nosso site",
+            status: "ativo",
+            texto: htmlTexto,
+            titulo: "Primeiro artigo do site"
+
+        });
+
+        db.collection("artigos").add({
+
+            autor: "Setembrino Trocatapas",
+            data: "2020-03-01 11:25",
+            imagem: "https://picsum.photos/199",
+            resumo: "Segundo artigo do nosso site com detalhes",
+            status: "ativo",
+            texto: htmlTexto,
+            titulo: "Segundo artigo do Scriptando"
+
+        });
+
+        db.collection("artigos").add({
+
+            autor: "Marineuza Siriliano",
+            data: "2020-03-01 22:39",
+            imagem: "https://picsum.photos/200",
+            resumo: "Resumo de mais um artigo do Scriptando",
+            status: "ativo",
+            texto: htmlTexto,
+            titulo: "Terceiro artigo da série"
+
+        });
+
+        db.collection("artigos").add({
+
+            autor: "Setembrino Trocatapas",
+            data: "2020-03-02 10:00",
+            imagem: "https://picsum.photos/201",
+            resumo: "Quarto, sala, cozinha e banheiro, além do quintal",
+            status: "ativo",
+            texto: htmlTexto,
+            titulo: "Mais um: este é o quarto"
+
+        });
+
+        db.collection("artigos").add({
+
+            autor: "Emengardio Constâncio",
+            data: "2020-03-02 12:44",
+            imagem: "https://picsum.photos/202",
+            resumo: "O mais famoso dos artigos resumido em uma frase",
+            status: "ativo",
+            texto: htmlTexto,
+            titulo: "Quinta-feira tem artigo"
+
+        });
+    </script>
+    Foi?
+
+
+</body>
+
+</html>

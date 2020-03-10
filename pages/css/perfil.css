@@ -1,0 +1,11 @@
+.block {
+    padding: 0 1rem;
+}
+.block .center a {
+    background: linear-gradient(rgb(113, 175, 226), rgb(21, 56, 85));
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    display: block;
+    margin: 1rem;
+}
